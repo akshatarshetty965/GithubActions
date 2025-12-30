@@ -21,7 +21,7 @@ jobs:
     environment: development
     env:
       DATABRICKS_HOST: 'https://adb-2231334099427038.18.azuredatabricks.net/'
-      DATABRICKS_TOKEN:  ${{ secrets.DATABRICKSSECRET }}
+      DATABRICKS_TOKEN:  '${{ secrets.DATABRICKSSECRET }}'
       REPO_PATH: /Workspace/Users/aksr5@publicisgroupe.net/GithubActions
       # DBFS_LIB_PATH: dbfs:/path/to/libraries/
       # LATEST_WHEEL_NAME: latest_wheel_name.whl
