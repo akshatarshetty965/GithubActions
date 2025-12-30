@@ -7,8 +7,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: databricks/setup-cli@main
+      - uses: .github/workflows/deploy-databricks.yml
       - name: Deploy Databricks Bundle
         run: databricks bundle deploy --target prod
         env:
